@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+  <!-- Imagen de fondo superior -->
+  <ImageView
+      android:id="@+id/header_background"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/nubes"
+      app:layout_constraintBottom_toTopOf="@+id/guideline"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <!-- Logo principal -->
+  <ImageView
+      android:id="@+id/imgLogo"
+      android:layout_width="140dp"
+      android:layout_height="90dp"
+      android:elevation="5dp"
+      android:src="@drawable/logo_principal"
+      app:layout_constraintBottom_toTopOf="@+id/guideline"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.3" />
+
+  <!-- Texto de bienvenida -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="48dp"
+      android:text="¡Bienvenido/a!\nElige qué deseas calcular"
+      android:textAlignment="center"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+  <!-- Línea guía para separar la parte superior del contenido -->
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.45" />
+
+  <!-- Botón CardView: Calcular Salario -->
+  <androidx.cardview.widget.CardView
+      android:id="@+id/btnGoToSalary"
+      android:layout_width="0dp"
+      android:layout_height="60dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:foreground="?attr/selectableItemBackground"
+      app:cardBackgroundColor="@color/azul"
+      app:cardCornerRadius="28dp"
+      app:cardElevation="8dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/guideline"
+      android:layout_marginStart="24dp"
+      android:layout_marginEnd="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calcular Salario (Viña / Bodega)"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+  </androidx.cardview.widget.CardView>
+
+  <!-- Botón CardView: Calcular Indemnización -->
+  <androidx.cardview.widget.CardView
+      android:id="@+id/btnGoToIndemnizacion"
+      android:layout_width="0dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="16dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:foreground="?attr/selectableItemBackground"
+      app:cardBackgroundColor="@color/rojoclaro"
+      app:cardCornerRadius="28dp"
+      app:cardElevation="8dp"
+      app:layout_constraintEnd_toEndOf="@+id/btnGoToSalary"
+      app:layout_constraintStart_toStartOf="@+id/btnGoToSalary"
+      app:layout_constraintTop_toBottomOf="@+id/btnGoToSalary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calcular Indemnización"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+  </androidx.cardview.widget.CardView>
+
+  <!-- ========================================================= -->
+  <!--  IMAGEN DE FONDO INFERIOR - CORREGIDA Y EN SU LUGAR        -->
+  <!-- ========================================================= -->
+  <ImageView
+      android:id="@+id/footer_background"
+      android:layout_width="453dp"
+      android:layout_height="300dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/mujere_cocechando"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btnGoToIndemnizacion"
+      app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Calculadora Salarial</string>
+
+    <!-- Pantalla de selección de rubro -->
+    <string name="select_rubro_title">Seleccione el rubro</string>
+    <string name="rubro_bodega">Bodega</string>
+    <string name="rubro_vina">Viña</string>
+
+    <!-- Pantalla principal -->
+    <string name="rubro">Rubro</string>
+    <string name="titulo_haberes">Haberes</string>
+    <string name="titulo_descuentos">Descuentos</string>
+    <string name="titulo_resultados">Resultados</string>
+
+    <!-- Labels de Haberes -->
+    <string name="categoria">Categoría</string>
+    <string name="pregunta_titulo">¿título?</string>
+    <string name="titulo_si">Sí</string>
+    <string name="titulo_no">No</string>
+    <string name="pregunta_mes_completo">¿Trabajó el mes completo?</string>
+    <string name="antiguedad">Antigüedad</string>
+    <string name="si">Sí</string>
+    <string name="no">No</string>
+    <string name="Horas_extra_al_50">Horas extra al %50</string>
+    <string name="Horas_extra_al_100">Horas extra al %100</string>
+
+    <!-- Labels de Descuentos -->
+    <string name="Adelanto">Adelanto</string>
+
+    <!-- Botones -->
+    <string name="btn_calcular">Calcular</string>
+    <string name="btn_limpiar">Limpiar</string>
+
+    <!-- Resultados -->
+    <string name="resultado_total_haberes">Total haberes</string>
+    <string name="resultado_total_descuentos">Total descuentos</string>
+    <string name="resultado_sueldo_liquido">Total</string>
+
+    <string name="compartir_esta_calculadora">Compartir esta calculadora</string>
+    <string name="Total">Total</string>
+
+    <!-- Array de Categorías para el Spinner -->
+    <string-array name="categorias_array">
+        <item>Op. Comun</item>
+        <item>Op. Especializado</item>
+        <item>Op. Calificado</item>
+        <item>Op. Foguista</item>
+    </string-array>
+
+</resources>
