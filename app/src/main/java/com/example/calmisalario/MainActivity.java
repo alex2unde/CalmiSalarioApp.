@@ -2,11 +2,8 @@ package com.example.calmisalario;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
-
-import com.example.calmisalario.SalaryCalculatorActivity;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
+import androidx.cardview.widget.CardView;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -32,7 +32,7 @@ public class SalaryCalculatorActivity extends AppCompatActivity {
     private EditText etHorasExtra50;
     private EditText etHorasExtra100;
     private EditText etViatico; // Adelanto
-    private Button btnCalcular;
+    private CardView btnCalcular;
     private BottomNavigationView bottomNavigationView;
 
     // Result Views
