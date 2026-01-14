@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="background">#F0EDED</color>
+    <color name="seleccion">#D1CFCF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blue_primary">#3F51B5</color>
-    <color name="red_primary">#DC3545</color>
-    <color name="azul">#4F61FF</color>
-    <color name="rojoclaro">#FD5145</color>
+    <color name="azul">#7D8AFF</color>
+    <color name="rojoclaro">#FD8279</color>
+
+    <!-- Colores de texto -->
+    <color name="text_primary">#212121</color> <!-- Un negro no tan puro -->
+    <color name="text_secondary">#757575</color> <!-- Un gris estándar -->
 </resources>

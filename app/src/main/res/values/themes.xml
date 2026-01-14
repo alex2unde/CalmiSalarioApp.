@@ -3,8 +3,35 @@
     <style name="Base.Theme.CalmiSalario" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:statusBarColor">@color/seleccion</item>
+
+        <!-- Colores de texto para toda la app -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
     </style>
 
     <style name="Theme.CalmiSalario" parent="Base.Theme.CalmiSalario" />
+    <!-- ========================================================= -->
+    <!--  ESTILO PERSONALIZADO PARA LA BARRA DE NAVEGACIÓN INFERIOR -->
+    <!-- ========================================================= -->
+    <style name="Theme.BottomNavigationView" parent="Theme.Material3.Light">
+        <!-- Color del ícono y texto cuando el ítem está SELECCIONADO -->
+        <item name="colorPrimary">@color/seleccion</item>
+
+        <!-- Color del ícono y texto cuando el ítem NO está seleccionado -->
+        <item name="colorOnSurfaceVariant">@android:color/black</item>
+    </style>
+
+    <!-- Estilo personalizado para el indicador de la BottomNavigationView -->
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/seleccion</item>
+    </style>
+
+    <!-- ========================================================= -->
+    <!--  ESTILO PERSONALIZADO PARA LOS RADIO BUTTONS              -->
+    <!-- ========================================================= -->
+    <style name="App.Custom.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton">
+        <!-- Usamos el selector de color que ya habías creado -->
+        <item name="buttonTint">@color/radio_button_color_selector</item>
+    </style>
 </resources>

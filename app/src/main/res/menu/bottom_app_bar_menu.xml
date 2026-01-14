@@ -15,8 +15,8 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/action_indemnification"
-        android:icon="@drawable/ic_calculate"
+        android:id="@+id/action_calculate_indemnizacion"
+        android:icon="@android:drawable/ic_menu_agenda"
         android:title="Calcular Indemnización"
         app:showAsAction="ifRoom" />
 

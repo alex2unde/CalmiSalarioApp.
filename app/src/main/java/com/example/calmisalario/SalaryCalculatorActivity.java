@@ -73,6 +73,7 @@ public class SalaryCalculatorActivity extends AppCompatActivity {
         setupBottomNavigation();
 
         btnCalcular.setOnClickListener(v -> calculateAndShowResults());
+
     }
 
     private void initializeViews() {
@@ -131,13 +132,17 @@ public class SalaryCalculatorActivity extends AppCompatActivity {
             } else if (itemId == R.id.action_help) {
                 showHelp();
                 return true;
-            } else if (itemId == R.id.action_indemnification) {
-                showIndemnificationToast();
+            } else if (itemId == R.id.action_calculate_indemnizacion) {
+                // ¡CÓDIGO CORREGIDO AQUÍ!
+                // Creamos y lanzamos el Intent para abrir la otra calculadora.
+                Intent intent = new Intent(SalaryCalculatorActivity.this, IndemnizacionActivity.class);
+                startActivity(intent);
                 return true;
             }
             return false;
         });
     }
+
 
     private void shareCalculator() {
         String url = "https://wa.me/?text=%C2%A1Mir%C3%A1%20esta%20calculadora%20de%20salarios%20de%20bodega%20y%20vi%C3%B1a!https:%20%20//https://alex2unde.github.io/calc-mi-salario";

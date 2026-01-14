@@ -106,6 +106,8 @@
         android:textStyle="bold" />
   </androidx.cardview.widget.CardView>
 
+
+
   <!-- ========================================================= -->
   <!--  IMAGEN DE FONDO INFERIOR - CORREGIDA Y EN SU LUGAR        -->
   <!-- ========================================================= -->
