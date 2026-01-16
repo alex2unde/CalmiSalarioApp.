@@ -66,6 +66,10 @@
     <string name="despido_sin_causa">Despido sin causa</string>
     <string name="renuncia">Renuncia</string>
     <string name="calcular_nmi_salario_nbodega">CALCULAR SALARIO DE BODEGA</string>
+    <string name="titulo_grande_indemnizacion">CALCULAR\nMI\nINDEMNIZACIÓN</string>
+    <string name="calcular_salario_de_bodega">Calcular Salario de Bodega</string>
+    <string name="bienvenido_a_nelige_qu_deseas_calcular">¡Bienvenido/a!\nElige qué deseas calcular</string>
+    <string name="calcular_indemnizaci_n">Calcular Indemnización</string>
 
 
 </resources>

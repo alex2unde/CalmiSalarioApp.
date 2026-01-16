@@ -68,6 +68,7 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@android:drawable/ic_menu_today"
                         android:focusable="false"
+                        android:clickable="true"
                         android:hint="@string/seleccionar_fecha"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -90,6 +91,7 @@
                         android:layout_height="wrap_content"
                         android:drawableEnd="@android:drawable/ic_menu_today"
                         android:focusable="false"
+                        android:clickable="true"
                         android:hint="@string/seleccionar_fecha"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -280,6 +282,26 @@
                         app:layout_constraintTop_toTopOf="@+id/txtPreavisoLabel"
                         tools:text="$950,000" />
 
+                    <TextView
+                        android:id="@+id/txtIntegracionLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Integración Mes de Despido:"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtPreavisoLabel" />
+
+                    <TextView
+                        android:id="@+id/txtIntegracionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtIntegracionLabel"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/txtIntegracionLabel"
+                        tools:text="$50,000" />
+
                     <!-- Aguinaldo Proporcional -->
                     <TextView
                         android:id="@+id/txtAguinaldoProporcionalLabel"
@@ -288,7 +310,7 @@
                         android:text="@string/resultado_aguinaldo_proporcional"
                         android:textColor="@android:color/black"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/txtPreavisoLabel" />
+                        app:layout_constraintTop_toBottomOf="@id/txtIntegracionLabel" />
 
                     <TextView
                         android:id="@+id/txtAguinaldoProporcionalValue"
